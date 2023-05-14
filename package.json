@@ -1,0 +1,39 @@
+{
+    "name": "SquidGames-Launcher",
+    "preductname": "SquidGames Launcher",
+    "version": "1.1.1",
+    "description": "Launcher Mincraft por HypnoStudios",
+    "main": "src/app.js",
+    "author": "HypnoStudios",
+    "url": "http://s922434499.onlinehome.mx/hypnostudios/squidgames/launcher",
+    "engines": {
+        "node": "^16.x.x"
+    },
+    "scripts": {
+        "start": "cross-env-shell NODE_ENV=dev electron .",
+        "build": "node build.js",
+        "dev": "nodemon --exec npm start"
+    },
+    "license": "CC0",
+    "nodemonConfig": {
+        "ext": "js,html,css"
+    },
+    "dependencies": {
+        "discord-rpc": "^4.0.1",
+        "electron-updater": "^5.0.1",
+        "env-cmd": "^10.1.0",
+        "minecraft-java-core": "^2.5.1",
+        "node-fetch": "^2.6.7",
+        "shell": "^0.9.4"
+    },
+    "devDependencies": {
+        "cross-env": "^7.0.3",
+        "electron": "^20.0.0",
+        "electron-builder": "^23.0.3",
+        "nodemon": "^2.0.16"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Hypnos0110/SquidGamesLauncher.git"
+    }
+}
